@@ -13,11 +13,13 @@
  * This file is not copyrighted, and belongs to the public domain.
  */
 // Section 1:
- (function(a) {
+// The underscore is a utility variable to be used instead of using space declaring new variables when code-golfing. Should always be last.
+// Perhaps adding _a, _b, etc if we need more in several places.
+ (function(a, b, _) {
 
 // Section 2:
 HAZ
-	.add(a,function(t){var e=t.c(a),g='getContext';return(e[g]&&eg);});
+	.add(a,function(t){_=t.c(a);return(_[b]&&_[b]('2d'));});
 
 // Section 1:
-})('canvas');
+})('canvas', 'getContext');

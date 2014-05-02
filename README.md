@@ -35,7 +35,7 @@ The 'tools' is a simple library for the code-golfer containing some simple code 
 
 ```javascript
 tools = {
-  c: function(name) {}, //crates and returns a node element with the name name
+  c: function(name) {}, //craates and returns a node element with the name name
   w: window, // Contains the global scope object
   u: undefined // Contains the javascript 'undefined' value
 }

@@ -33,8 +33,10 @@ The HAZ.add(name, function) method defines a feature detection function. The arg
 
 The 'tools' is a simple library for the code-golfer containing some simple code golfing tools making your code more compact (possibly). It consists of the following fields:
 
-> tools {
->   c: function(name) {} //crates and returns a node element with the name name
->   w: window // Contains the global scope object
->   u: undefined // Contains the javascript 'undefined' value
-> }
+```javascript
+tools = {
+  c: function(name) {}, //crates and returns a node element with the name name
+  w: window, // Contains the global scope object
+  u: undefined // Contains the javascript 'undefined' value
+}
+```

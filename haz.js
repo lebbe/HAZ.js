@@ -6,20 +6,9 @@
  *
  * Standard MIT license.
  */
-(function(w, HAZ, undefined) {
+(function(w, HAZ) {
 	// This object contains the different feature detectors.
 	var featureDetectors = {};
-
-	// This object contains utilities which can be used by
-	// the feature detection functions. It will be their
-	// 'this' object.
-	var tools = {
-		'c': function(name) {
-			return document.createElement(name);
-		},
-		'w': w,
-		'u': undefined
-	};
 
 	/**
 	 * HAZ(name)
@@ -43,7 +32,7 @@
 		// It gets replaced by a dummy function returning the same
 		// result
 		featureDetectors[name] = function() {
-			var result = !!func(tools);
+			var result = !!func();
 			featureDetectors[name] = function() {
 				return result;
 			}

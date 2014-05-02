@@ -24,3 +24,17 @@ Adding HAS.js feature detection functions is almost as simple as using one. This
 > HAZ.add('canvas',function(t){var e=t.c('canvas'),g='getContext';return(e[g]&&e[g]('2d'));});
 
 The .add method returns the HAZ instance, meaning that you can perform method chaining.
+
+Tools when using the .add-method:
+
+The HAZ.add(name, function) method defines a feature detection function. The argument name is a string describing the feature detection algorithm. This is used again when performing feature detection when calling HAZ(name). The function argument is a function with the following signature:
+
+> detector(tools)
+
+The 'tools' is a simple library for the code-golfer containing some simple code golfing tools making your code more compact (possibly). It consists of the following fields:
+
+> tools {
+>   c: function(name) {} //crates and returns a node element with the name name
+>   w: window // Contains the global scope object
+>   u: undefined // Contains the javascript 'undefined' value
+> }

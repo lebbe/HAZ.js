@@ -16,6 +16,10 @@ Using HAZ.js for feature detection is superbebly simple. If you want to investig
 
 This code returns "true" if the browser supports the canvas. The result is also cached, so don't be afraid of calling HAZ multiple times with the same argument.
 
+Update! Now you can also check if the browser supports to store and read a cookie, with the following line:
+
+> HAZ('cookie');
+
 Using HAZ.js as a framework
 ======
 

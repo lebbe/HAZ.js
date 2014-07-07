@@ -15,15 +15,17 @@
 // Section 1:
 // The underscore is a utility variable to be used instead of using space declaring new variables when code-golfing. Should always be last.
 // Perhaps adding _a, _b, etc if we need more in several places.
- (function(a, b, c, _) {
+ (function(a, b, c, d, e, _) {
 
 // Section 2:
 HAZ
-	.add(a,function(){_=c(a);return(_[b]&&_[b]('2d'));});
-
+	.add(a,function(){_=c(a);return(_[b]&&_[b]('2d'));})
+	.add(e, function() {d[e] = 'a=a;path=/';_ = d[e].indexOf('a=a') >= 0;d[e] = 'a=';return _;});
 // Section 1:
 })(
-'canvas',
-'getContext',
-function(n) {return document.createElement(n);} // Creates a DOM node
+'canvas'
+,'getContext'
+,function(n) {return document.createElement(n);} // Creates a DOM node
+,document
+,'cookie'
 );
